@@ -16,6 +16,13 @@
       rel="stylesheet"
     />
     <link
+      rel="preload"
+      as="image"
+      href="assets/images/heroBlur.webp"
+      imagesrcset="assets/images/heroBlurMobile.webp 576w, assets/images/heroBlur.webp 1160w"
+    />
+
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
@@ -28,7 +35,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <header  >
+      <header>
         <div class="container">
           <div class="header-body G-justify-between">
             <a class="header-logo G-flex" href="index.html">
@@ -57,7 +64,9 @@
                     <a class="menu-list-link" href="#howWork">Как работает</a>
                   </li>
                   <li>
-                    <a class="menu-list-link" href="#possibilities">Возможности</a>
+                    <a class="menu-list-link" href="#possibilities"
+                      >Возможности</a
+                    >
                   </li>
                   <li>
                     <a class="menu-list-link" href="#reviews">Отзывы</a>
@@ -68,20 +77,19 @@
                 </ul>
 
                 <div class="menu-mobile-actions">
+                  <button class="btn-login G-align-center">
+                    <span class="login-btn-bg G-center">
+                      <i class="icon icon-person"></i>
+                    </span>
+                    <span class="login-btn-text">Войти</span>
+                  </button>
 
-                    <button class="btn-login G-align-center">
-                <span class="login-btn-bg G-center">
-                  <i class="icon icon-person"></i>
-                </span>
-                <span class="login-btn-text">Войти</span>
-              </button>
-
-              <button class="btn-register G-align-center">
-                <span class="register-btn-bg G-center">
-                  <i class="icon icon-person-edit"></i>
-                </span>
-                <span class="register-btn-text">Регистрация</span>
-              </button>
+                  <button class="btn-register G-align-center">
+                    <span class="register-btn-bg G-center">
+                      <i class="icon icon-person-edit"></i>
+                    </span>
+                    <span class="register-btn-text">Регистрация</span>
+                  </button>
                 </div>
               </div>
             </nav>
@@ -122,8 +130,11 @@
                   <span class="text-wrap">изображений за секунды</span>
                 </h1>
                 <p class="fade-bottom">
-                  Преобразите обычные картинки в <span class="mobile-text-wrap">высококачественные изображения
-                  с яркими </span> оттенками и чёткими деталями
+                  Преобразите обычные картинки в
+                  <span class="mobile-text-wrap"
+                    >высококачественные изображения с яркими
+                  </span>
+                  оттенками и чёткими деталями
                 </p>
                 <button class="black-btn hero-btn fade-bottom">
                   <span class="black-btn-bg G-center">
@@ -133,7 +144,7 @@
                 </button>
               </div>
 
-              <div class="hero-slider ">
+              <div class="hero-slider">
                 <div class="hero-mockup-bg">
                   <div class="hero-mockup-header G-flex">
                     <img
@@ -157,7 +168,6 @@
                 <div class="hero-items">
                   <div class="hero-swiper swiper">
                     <div class="swiper-wrapper">
-                      
                       <div class="swiper-slide">
                         <div class="improve-hero-card G-image">
                           <div class="improve-card-images">
@@ -194,7 +204,6 @@
                               alt="photo"
                               width="256"
                               height="256"
-                            
                             />
                             <img
                               class="improve-low-img"
@@ -242,7 +251,6 @@
                         </div>
                       </div>
 
-                      
                       <div class="swiper-slide">
                         <div class="improve-hero-card G-image">
                           <div class="improve-card-images">
@@ -271,7 +279,6 @@
                         </div>
                       </div>
 
-
                       <div class="swiper-slide">
                         <div class="improve-hero-card G-image">
                           <div class="improve-card-images">
@@ -299,7 +306,6 @@
                           </div>
                         </div>
                       </div>
-
 
                       <div class="swiper-slide">
                         <div class="improve-hero-card G-image">
@@ -437,7 +443,6 @@
                         </div>
                       </div>
 
-
                       <div class="swiper-slide">
                         <div class="improve-hero-card G-image">
                           <div class="improve-card-images">
@@ -466,7 +471,6 @@
                         </div>
                       </div>
 
-
                       <div class="swiper-slide">
                         <div class="improve-hero-card G-image">
                           <div class="improve-card-images">
@@ -494,8 +498,6 @@
                           </div>
                         </div>
                       </div>
-
-
                     </div>
                   </div>
                 </div>
@@ -530,9 +532,9 @@
                     alt="Hero grid"
                     width="1160"
                     height="491"
-                    loading="eager"
                     fetchpriority="high"
                     decoding="async"
+                    style="content-visibility: auto;"
                   />
                 </picture>
               </div>
@@ -567,7 +569,12 @@
                 <h2>Почему именно наша нейросеть?</h2>
                 <p>
                   Мы подумали обо всём: от качества улчшеения
-                  <span class="desktop-text-wrap">до <span class="mobile-text-wrap">удобства на всех устройствах</span></span>
+                  <span class="desktop-text-wrap"
+                    >до
+                    <span class="mobile-text-wrap"
+                      >удобства на всех устройствах</span
+                    ></span
+                  >
                 </p>
               </div>
 
@@ -664,7 +671,7 @@
                 <p>От анализа до идеального результата — за секунды.</p>
               </div>
 
-              <div class="how-work-items block-cnt  fade-bottom G-flex">
+              <div class="how-work-items block-cnt fade-bottom G-flex">
                 <div class="how-work-item">
                   <div class="work-item-header G-align-center">
                     <div class="work-item-number">1</div>
@@ -738,7 +745,8 @@
                   </div>
                   <div class="work-item-texts">
                     <h3 class="block-title">
-                      <span class="mobile-text-wrap">Определение</span> недостающих
+                      <span class="mobile-text-wrap">Определение</span>
+                      недостающих
                       <span class="desktop-text-wrap">деталей</span>
                     </h3>
                     <p class="block-text">
@@ -826,13 +834,11 @@
                     <span class="black-btn-text">Начать бесплатно</span>
                   </button>
 
-                   <button class="white-btn-check work-btn mobile-block">
-                      <i class="icon icon-check"></i>
-                
+                  <button class="white-btn-check work-btn mobile-block">
+                    <i class="icon icon-check"></i>
+
                     <span class="white-check-text">Начать бесплатно</span>
                   </button>
-
-
                 </div>
               </div>
             </div>
@@ -842,7 +848,7 @@
         <section id="possibilities" class="possibilities-section section">
           <div class="container">
             <div class="possibilities-body">
-              <div class="section-titles  fade-bottom">
+              <div class="section-titles fade-bottom">
                 <h2>Возможности</h2>
                 <p>Нейросеть, которая понимает вас с полуслова</p>
               </div>
@@ -932,7 +938,9 @@
                     </h3>
                     <p class="block-text">
                       Повышайте качество товарных фото для маркетплейсов
-                      <span class="desktop-text-wrap">и интернет-магазинов</span>
+                      <span class="desktop-text-wrap"
+                        >и интернет-магазинов</span
+                      >
                     </p>
                   </div>
                   <div class="possibilities-item-img G-flex">
@@ -957,8 +965,10 @@
               <div class="section-titles fade-bottom">
                 <h2>Попробуйте бесплатно!</h2>
                 <p>
-                  Загрузите своё фото, и наш AI увеличит <span class="mobile-text-wrap">его разрешение без
-                  потери качества</span>
+                  Загрузите своё фото, и наш AI увеличит
+                  <span class="mobile-text-wrap"
+                    >его разрешение без потери качества</span
+                  >
                 </p>
 
                 <button class="black-btn try-btn">
@@ -1390,11 +1400,16 @@
                 <h2>Все, что нужно знать о Nexa AI</h2>
               </div>
 
-              <div id="accordion" class="faq-items block-cnt G-flex-column fade-bottom">
+              <div
+                id="accordion"
+                class="faq-items block-cnt G-flex-column fade-bottom"
+              >
                 <div class="faq-item">
                   <div class="faq-item-header link G-align-center">
                     <h3>
-                      <span class="desktop-block">Что такое Nexa AI и как он работает?</span>
+                      <span class="desktop-block"
+                        >Что такое Nexa AI и как он работает?</span
+                      >
                       <span class="mobile-block">Что такое Nexa AI?</span>
                     </h3>
                     <div class="faq-item-icon G-center">
@@ -1445,8 +1460,10 @@
                 <div class="faq-item">
                   <div class="faq-item-header G-align-center link">
                     <h3>
-                      <span class="desktop-block">Могу ли я использовать улучшенные изображения в
-                      коммерческих проектах?</span>
+                      <span class="desktop-block"
+                        >Могу ли я использовать улучшенные изображения в
+                        коммерческих проектах?</span
+                      >
                       <span class="mobile-block">
                         Могу ли я использовать изображения в своих проектах?
                       </span>
@@ -1497,7 +1514,7 @@
 
       <footer>
         <div class="container">
-          <div class="footer-body ">
+          <div class="footer-body">
             <a class="footer-logo G-flex fade-bottom" href="index.html">
               <img
                 src="assets/images/logoBig.svg"
@@ -1541,7 +1558,9 @@
                     <a class="menu-list-link" href="#howWork">Как работает</a>
                   </li>
                   <li>
-                    <a class="menu-list-link" href="#possibilities">Возможности</a>
+                    <a class="menu-list-link" href="#possibilities"
+                      >Возможности</a
+                    >
                   </li>
                   <li>
                     <a class="menu-list-link" href="#reviews">Отзывы</a>
