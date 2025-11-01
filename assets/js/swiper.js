@@ -27,11 +27,8 @@ let heroSwiper = new Swiper(".hero-swiper", {
         500: {slidesPerView: 3,},
         600: {slidesPerView: 2.5,},
         700: {slidesPerView: 3,},
-
         800: {slidesPerView: 4,},
-
-        1000: {slidesPerView: 4.1,spaceBetween: 12,},
-
+        1000: {slidesPerView: 5,spaceBetween: 12,},
         1399: {slidesPerView: 5.3,spaceBetween: 12,},
 
     },
