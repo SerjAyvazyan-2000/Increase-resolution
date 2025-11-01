@@ -113,15 +113,13 @@ function initSwiper() {
       clickable: true,
     },
 
+     cssMode: window.innerWidth < 768, 
+
     breakpoints: {
       320:  { slidesPerView: 1 },
-      490:  { slidesPerView: 1.2 },
-      620:  { slidesPerView: 1.5 },
-      810:  { slidesPerView: 2 },
-      992:  { slidesPerView: 3 },
-      1096: { slidesPerView: 3 },
-      1232: { slidesPerView: 3 },
-    },
+      768:  { slidesPerView: 2 },
+      1200: { slidesPerView: 3 },
+    }
   });
 
   const wrapper = document.querySelector(".reviews-swiper");
